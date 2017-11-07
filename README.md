@@ -3,15 +3,15 @@
 
 ## install
 
-npm install vueSwiper
+npm install vueswiper007
 ## Usage
 
 ``` 
 
 import Vue from 'vue';
 var VueTouch = require('vue-touch')
-Vue.use(VueTouch, {name: 'v-touch'})
-import Swiper from 'vueSwiper'
+Vue.use(VueTouch, {name: 'v-touch'})//需要先使用vue-touchs
+import Swiper from 'vueswiper007'
 new Vue({
     el: 'body',
     components: {Swiper},

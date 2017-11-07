@@ -14,8 +14,10 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: 'index.js',
-
+        publicPath: '/',
+        library: 'vueswiper007',
+        libraryTarget: 'umd',
+        filename: "[name].js"
 	},
 	resolve: {
 		extensions: ['.js', '.vue', '.json'],

@@ -1,10 +1,14 @@
 {
-  "name": "vue-swiper",
-  "version": "1.0.0",
+  "name": "vueswiper007",
+  "version": "1.0.7",
   "description": "走马灯组件",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caojiangtao/vue-swiper.git"
   },
   "dependencies": {
     "vue": "^2.5.2"
@@ -23,10 +27,19 @@
     "vue-html-loader": "^1.2.2",
     "vue-loader": "^8.3.1",
     "vue-style-loader": "^1.0.0",
-    "style-loader":"^0.17.0",
+    "style-loader": "^0.17.0",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^1.14.1"
   },
-  "author": "jt_cao007@qq.com",
-  "license": "ISC"
+  "author": "river.cao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caojiangtao/vue-swiper/issues"
+  },
+  "homepage": "https://github.com/caojiangtao/vue-swiper#readme",
+  "keywords": [
+    "vue-swiper",
+    "swiper",
+    "slider"
+  ]
 }

@@ -23,9 +23,13 @@
 	</div>
 
 </template>
-<script>
+
+<script type="text/babel">
+	var VueTouch = require('vue-touch');
+	Vue.use(VueTouch, {name: 'v-touch'});
 	import './vue-swiper.scss';
 	export default {
+		name:"vueSwiper",
 		props: {
 			swiperPorp: Object,
 			default: {
