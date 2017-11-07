@@ -1,10 +1,10 @@
-###vueSwiper###
+#vueSwiper#
 一个走马灯效果
 
-###install###
+##install##
 *npm install as vue-touch
 npm install vueSwiper
-###Usage###
+##Usage#
 
 ``` 
 
