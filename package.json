@@ -1,6 +1,6 @@
 {
   "name": "vueswiper007",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "走马灯组件",
   "main": "dist/app.js",
   "scripts": {

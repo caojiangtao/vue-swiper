@@ -4,14 +4,14 @@
                 'transform' : 'translate3d(' + translateX + 'px,' + translateY + 'px, 0)',
                 'transition-duration': transitionDuration + 'ms'
            }">
-			<div v-for=" item in imgall">
+			<a v-for=" item in imgall" :href="item.href">
 				<div class="content">
 					<h3>{{item.name}}</h3>
 					<span>{{item.tag}}</span>
 					<p>{{item.content}}</p>
 				</div>
 				<img :src="item.src" />
-			</div>
+			</a>
 
 		</v-touch>
 		<div class="navbox">
