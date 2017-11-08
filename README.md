@@ -29,7 +29,7 @@ new Vue({
 	]},
     	porp:{
 			time:2000, //切换时间
-			loop:true, //是否循环
+			loop:true, //是否循环自动播放
 			delay:3000,//延迟时间
 			height:300, //高度
 			background:'orange' //背景色

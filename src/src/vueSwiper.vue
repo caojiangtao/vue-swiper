@@ -3,8 +3,7 @@
 		<v-touch v-on:swipeleft="onSwipeLeft" v-on:swiperight="onSwipeRight" class="swiperbox" :style="{width:windoWidth+'px',
                 'transform' : 'translate3d(' + translateX + 'px,' + translateY + 'px, 0)',
                 'transition-duration': transitionDuration + 'ms'
-            }">
-
+           }">
 			<div v-for=" item in imgall">
 				<div class="content">
 					<h3>{{item.name}}</h3>
@@ -25,8 +24,6 @@
 </template>
 
 <script type="text/babel">
-	var VueTouch = require('vue-touch');
-	Vue.use(VueTouch, {name: 'v-touch'});
 	import './vue-swiper.scss';
 	export default {
 		name:"vueSwiper",
@@ -78,14 +75,15 @@
 				this.imgall = [...n];
 				this.imgall.push(n[0]);
 				this.imgall.unshift(n[len - 1]);
-				console.log(this.imgall)
+				
 			}
 		},
 		created: function() {},
 		mounted: function() {
 			this.$nextTick(() => {
-				this.moveAuto();
-				console.log("this.imgall==" + this.imgall);
+				if(this.loop){
+					this.moveAuto();
+				}
 			})
 		},
 		computed: {
@@ -99,14 +97,14 @@
 				this.translateX = -document.body.clientWidth * index;
 				this.transitionDuration = this.swiperPorp.time;
 				this.total = index;
-				console.log(this.showorhaden )
+				
 			},
 			moveAuto: function() { //自动播放
 				this.showorhaden = false;
 				this.inTerval = setInterval(() => {
 					this.leftFunc();
 				}, this.swiperPorp.time + this.swiperPorp.delay)
-				console.log(this.showorhaden )
+				
 			},
 			clearAuto: function() { //清除播放，
 				clearInterval(this.inTerval);
@@ -146,7 +144,7 @@
 			},
 			leftFunc: function() {
 				var that = this;
-				console.log("this.total=" + this.total);
+		
 				if(this.total >= this.imgall.length - 2) {
 					this.translateX = -(document.body.clientWidth) * (this.total + 1);
 					this.transitionDuration = this.swiperPorp.time;
@@ -156,7 +154,7 @@
 						that.translateX = -(document.body.clientWidth);
 						that.transitionDuration = 0;
 					}, this.transitionDuration);
-					console.log("yes");
+				
 				} else {
 					this.translateX = -(document.body.clientWidth) * (this.total + 1);
 					this.transitionDuration = this.swiperPorp.time;
