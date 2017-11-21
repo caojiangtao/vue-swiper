@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caojiangtao/vue-swiper.git"
+    "url": "git+https://github.com/caojiangtao/popbox.git"
   },
   "dependencies": {
     "url-loader": "^0.6.2",
