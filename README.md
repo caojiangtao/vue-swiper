@@ -1,45 +1,9 @@
-## vueSwiper
-一个走马灯效果
+## Vue-popbox
 
-## install
+一个多更能弹出框插件
 
-npm install vueswiper007
-## Usage
+## popbox 有哪些功能
 
-``` 
-
-import Vue from 'vue';
-var VueTouch = require('vue-touch')
-Vue.use(VueTouch, {name: 'v-touch'})//需要先使用vue-touchs
-import Swiper from 'vueswiper007'
-new Vue({
-    el: 'body',
-    components: {Swiper},
-    data(){
-    return{
-    swiperdata:{
-		"title": "swiper-list",
-		"list": [{
-			"name": "流年似水",
-			"href": "http://mp3.flash127.com/music/30351.mp3",
-			"tag":"华语/音乐",
-			"content":"这是哎呦不错哦行榜的最好听的手歌曲",
-			"src": "../../static/img/one.jpg"
-		}
-	]},
-    	porp:{
-			time:2000, //切换时间
-			loop:true, //是否循环自动播放
-			delay:3000,//延迟时间
-			height:300, //高度
-			background:'orange' //背景色
-		}
-    }}
-    
-});
-
-<Swiper :pics='swiperdata' :swiperPorp='porp' ></Swiper>
-
-```
-
-
+* 消息---可设置自动关闭或者手动关闭
+* 提示--- 一般性提示，成功，失败，警告，错误
+* 弹出框---多少手动sdsd

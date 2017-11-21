@@ -1,7 +1,7 @@
 {
-  "name": "vueswiper007",
-  "version": "1.0.9",
-  "description": "走马灯组件",
+  "name": "popbox",
+  "version": "1.0.1",
+  "description": "vue-弹出框",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/caojiangtao/vue-swiper.git"
   },
   "dependencies": {
+    "url-loader": "^0.6.2",
     "vue": "^2.5.2"
   },
   "devDependencies": {
