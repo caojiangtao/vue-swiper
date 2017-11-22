@@ -27,7 +27,7 @@ popbox.install = function(Vue, options) {
 			case 'warning':
 				initTemplate = `<transition  name="tips"   v-on:after-leave="afterLeave"><div  ref="poptips" id="pop-tips" class="pop-warning" v-if="isShow"><i></i><p>${opt.content}</p></div></transition>`;
 				break;
-			case 'sccess':
+			case 'success':
 				initTemplate = `<transition  name="tips"  v-on:after-leave="afterLeave"><div  ref="poptips" id="pop-tips" class="pop-sccess" v-if="isShow"><i></i><p>${opt.content}</p></div></transition>`;
 				break;
 			case 'error':

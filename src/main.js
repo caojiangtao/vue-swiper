@@ -18,9 +18,9 @@ new Vue({
 			this.$Message({
 //				type:"notice", //消息
 //				autoClose:false,//是否自动关闭
-//				type:"error", //错误提出框
+				type:"error", //错误提出框
 //			type:"sccess",	 //成功提示框
-				type:"tips", //普通提示
+//				type:"tips", //普通提示
 //				type:"warning",//警告
 //				type:"message",//消息
 //				buttonOne:{    //按钮--可以设置两个按钮。

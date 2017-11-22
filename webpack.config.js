@@ -11,7 +11,7 @@ function resolve(dir) {
 
 module.exports = {
 	entry: {
-		app: './src/main.js'
+		app: './src/popbox.js'
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -35,8 +35,6 @@ module.exports = {
 			children: true, // Look for common dependencies in all children,
 			minChunks: 2 // How many times a dependency must come up before being extracted
 		}),
-//		new webpack.BannerPlugin("极客前端出品"), //  编译文件加注释
-//		new webpack.optimize.UglifyJsPlugin(), // 压缩
 		new uglifyJsPlugin({  //丑化
 		    compress: {
 		        warnings: false
